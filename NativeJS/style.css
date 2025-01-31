@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+.input-container, .transactions-container, .charts-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px);
+    overflow-y: auto;
+}
+
+.balance {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#balance {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2ecc71;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.transactions {
+    margin-top: 20px;
+}
+
+.transactions-section {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+#transactionList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#transactionList li {
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#transactionList li.income {
+    border-left: 5px solid #2ecc71;
+}
+
+#transactionList li.expense {
+    border-left: 5px solid #e74c3c;
+}
+
+.chart-container {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#budgetChart {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.currency-selector {
+    margin-bottom: 20px;
+}
+
+.currency-selector label {
+    font-weight: bold;
+}
+
+.currency-selector select {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.gif-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.gif-section img {
+    max-width: 100%;
+    height: auto;
+}
